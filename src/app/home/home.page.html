@@ -1,20 +1,250 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <ion-card>
+    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEBUQEhAVFRUVFhUVFRUQFRUVFRUVFREXFhYXFxUYHSggGB0nHxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGxAQGislICAuKy8vLS0tMC0tLS0tKy0tLS0tLS0tLS0tLS0tLS0rLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAKgBLQMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQIDBAUGBwj/xABMEAACAQIDBQQECQgIBAcAAAABAhEAAwQSIQUGEzFBIlFhcQcygZEUI0JScqGxwdEkM2JzgpKysxUWNUNjg8LhNJPD8BclRKLS0/H/xAAaAQACAwEBAAAAAAAAAAAAAAAAAQIDBAUG/8QALxEAAgIBAwIFAwMEAwAAAAAAAAECEQMEEiExQRQiMlFhEzNxBVKBQpHB8SM0cv/aAAwDAQACEQMRAD8Ar8CjgU/PRxK7XJyuCM2aBZqXPRxKOQ4IjapOHVgPRIp2Mr5KBINWcwqzszAm9dFtRz1OoByg9oie4Sai2krY0rfBDtC+zJazMTKkmZ1PEYVRy11e/eBt2HsJbQKmVxmLEkkGYM+c+2ueyVVhmnHgnmi0+SrlpKsm1ScKriqivFFTNaNNNqnYiKjLUnDoy0WBHFFSZablpgNiiKdloigBuWiKdSxTAbFFLFEUAJFEUtFAhIoApRRQFhFLFJNE0BYsUtNmiaAsdS0lFAWFFKBS5aBkZFFSZaMtOwIw1LNQh6XPSoVks0uaos1LNKgskzUZqjmlmigJM1bu6OFe5ebKpMWrgkdCyELr0k1g2bTMwVRLEwAK7PYWEfDIxVzmYDPERoCQBp561l1eWMI13Zp02Nykn2Rz29Ww8QmFwyuWc2L15rjiNFe6mTPr3H6qoC5XWbZv3LiNZa6zK05gSSOcjTpEDlXHlMpyzy9h0rNosi9LL9XCT8xLxKBcNRUTXRowWT8WjiVDNLmooLJc9GaowaJooCTMKUMKjmkNAWSmKMoqGlBp0KyXhDvo4VRg0TRQWP4NNNo0ZqXOaOQG8I03h1KLhpeJTAhyUFalz+FLmHdQBXy0RU8iiRRYEMUAVMQKTKKLAjFLFO4dLkosBkURT8tJFMBAKCKWkoGVMtEU+KIpkBoFEU6KWgBgqXC2C7rbHNmCieWpj76bW7uxiktFrj5pm2EyBSey+dvW5DRdfGq82T6cHIsxY3kmoot7o4CAbx5yUXyGjEe3T2V0WLGW0zEwAQNSI1B8awcPttLYIEtJnU6+qBGgIOsnn1qlt3br3LDWltdhz2oVwdPmuGkf71wsudTnbZ3cWiyxjxFl6/iFeHQyrKGDRGjCdK5zaODNx7xEjhWXuggTrbQEAnxNQ2NrtbRbfCGVAFEh5CjkJza1Fjd41S3dZrWYPaa1+cZIDkTABMmcvPuqEJxT4ZKemy1zEiwt7OqsOv291Ta1k7o7YspetC4wVBdRmLaBQGkkmNOQrYuOGYspBBJIKmQQTzB6iu7izKfBw8uJw5Y2aWaSirykdmoDU2iigHzSg0yilQEk0VHThRQEk0TTJpc1FAPopk0oNOgHUlANLNIBKKWiKAEpaIpQKAG0U/LSZaAGzRNOy0ZaQCTRNLlpQKAEmlp1JQOyqBRFKBToqREZFEU+igBkVobKNsBmuSxEZUGgY/pHuFUqmsR7Osaadax691gkdD9Mju1UEbVra+UHLbw1uOWZZdj3LPM+ys3au38QQPjSNT6qqBy8BWVvFes8ZCFuC2MhykhmJzHQnQAExy6VZ2/iA7BhbW2OWW2OyI//AGvPTuKXPU9Vg2ZJyTh07vkjG8GJH9+3tAP3Vm7xbevthnVrgYHKCCq8sw6xUuFwzPny/IRrjT81Yn7aydtOBa7QkZlkAwefQ0QlLcuSzNixqEuFwjnldGIlcpnmnL3dK9CtoAAANAAB7BXnNnKQDMMGAAj1lzaGRpI5V6SBXe0X9R5HXPiI2KKfFEVuOeMilinRTstAEYFLT8tGWgBkUsU7LS5aAGRRlqQCloAZloipIoigBlLT4oimA0UtLFEUgEpKWKIoAKKXLRFACUUsURSGJS0RRFAAaKKCtMCEClinAURSASKSKeBShaALOxcHxcRbtxILLm7soMmfYDTMZbyXbiQBDNoOUBtI8K2d2MB8Yl4wygklFlmI1HaHJde89KpbTwSJjCr3CgcSJFsAZ7p0JNzToK5eunuUor2Ov+lpY8sZy7GHtTCF7Zy+t2YHkw/3o2jyHma6L4JhxzvqfJx9iI/21o7J2bhsQxRQrFACcy3G6x6zEfUK5LhKdLjg9Cs+PDumlJ276UYe69lfg2Mfh5mW1BLGAqNzy97SB7q863jxQgWhHMMe8RyEdK9gv4C9aXHCxFu2qIpKoks0KdAVmIYzrXlO8mDUXmF22tu4BbzBYUa21IkqYBIIPtq+OGq+DBPWpuVf1UczhR2l+kv8Qr07DuGUMORHWuBXZhkMrArIM9BrzzCR9YruNkrlXhF0Zk5i22YAd89R410tHKm17nI1kbimuxby0ZakW2SYAJPcBJ+qtvYWweKX4ue2FTMsjLmbovardPJGKtmCMJSdIwMlGWro2bfgE2HH7JMe4VDkPKKFkTVpi2STqiDLRlqxw6Cg7xUXmgurRZHT5ZemL/sQgUVNA+dVXHY63aXO50zKpMcsxiTPSoeKw3W5FvgNTTlsdIkinZaktEMMykMO9SCPeKetvwq7cZaZBkpctWMtLlp2FFcLShKmy0sDupWFEXDoNmpgBTglKworcA0cA1aCmliix0UzapuSrwSkNunuCijkoy1bNvwpptUbhUVstGWp+HRlp2FEGWlipslJkp2FEQt07hVMFNKAahY9pBwKOHVoA04UtwbTotxFgXW7TE5QV6ATIbzmR7KZt6+nwi7xLE2+DZzsGIcfGnKF7MakidRyq3uWOze/y/taqm8Z1xflhB72Y1ytW+ZHV0SuUF8mT8Nwa+rhCfpu3/y+6t7dnaYuFrdqytkAZuyeeoGsQfrryzbG03ScpiNPM+Nd96Mi72+O6Zc9seRPE6DnGlYcakpK0qOzqJ4Zwmk22vd/JNtu5AxqvfYG4Ut2wDcglUViYkgesBM9K4PbeCu4i5mdlccO0hLzmZltKrHlpqDEHoK6zek/H3P1rfyrdZ7YG4CqlYLgEDrB6nu76Mmaak1ENJosMsankfX5ORt7mSwyXmBJ9VVknyMj667bY+7lvC2+JiLxytAAY846Kq9pz9HTxq9ddMIoWA99gDDeqoPJnHd3LzMSdKy9q2bkJfv3Az3pC5mBYgAGFA0Vf0RpQs04c3yD02LM0kqi+76v8F+7vGE7OHw6qPnXuv8AlIQP3mNVm3jxR/vsv6u3aX/TP11lRQKzy1GSXc6ePQaeC4iv5Na3vJil1+EMfB1tke4rWlY3ltXOzi8OrDlntaMP2fwPsrmYrX+Ahdn3MTkl8yKud1UZTcUFhp4nQ1LHkyN1ZVqMOnhG3GuexqYjdy3dQ3cHdFwDnbb1x4d8+Y9tc1dtlSQRBHMGjBYx7VwXLblWHUHmO4jqK7bDWbWOyYkKq3FMXkK5gY6gde8U6U+nDFOc9N6nuj2ff+ThnQgkEajpWDvePyY/TT+Kur26GGOxClgQrJlAQoVBtg66CZPdXM74r+SNPz7f2mko1konLL9TTuXujicJjLlo5rdxlP6Jj3jkfbXS7O33uLAv2g4+cnZb3cjXJ0V045ZR6M85PFCfVHq2zN4sLegLdCsfk3ewZ8CdD7DWxw68UsJmbLKjQntkKNBPM1obM23iLMcO8wHzW7Sfun7qvjqv3GaWj/az1o2R3U02ap7oYm7jLPFa7bQq5tsq2iToBDSXjWfqrYxeybi2rji+z5Ec9lLaCVQkc5PSn42F1yV+Dl8FI2aZw6wtztvXMRnW6UOQKcyjKxJJEEcvbXSGK1QnuVoyzhtdEIEU4Gg0xqmRJI7jQRU2ytnvfucNOcSSeQA0JP8A31qvibireewHDm3AYgECeoE93Ko71dXyPa63dgLU0mgtSE1IiIaaTTqZUkIQmkL0sUZaYDwRTtKZkpctVEx4pwFR5aWKBHWbnD4u79JPsaqm3L7J8LZWKnPhVlTB1tk1d3NHxNw/4i/wGszeQ9nFfr8OPdhzXM1T9R1dCrnBP3Rw+y8QoxF1riq027h7Z9p59Ty9tdR6JEiy2kdleXi7muJxN0oxcKraFQHEwGOsAEa+Jmu+9Fn5lz4JoOmr6VRTuJpi/Lk/H+SLadsvjsonW+RoY1i2NDrHKtna2Lw9rE3CSBfFtMufiMpBBylgBpqOg1jnWS2JZdpNlAM3svaExmKiR4imbwY67Zx98/FOOwo4lvMRltIe/wDSOlVN1ufyaIwc/pQrszOaxbZizYou7EsxS0xLMeZ7RFbe+GEUDB28rkKLgHCtpI+LXlPqg1mHeXE/JZF+hatj7Qas744spdwr28Uyvw2LQ6ksxCgjX26CoQ2tSNGoWVTxp8e3K/wirb2aD6uGxLe1V/0GrNvYtzpgG/zLjfdFUMNdxd8wly+/eQ7BR5mQBWgN08Y3rGfBrjN+NVqKfRM1ZMji6lOK/lslXZF4c8Nhk/WMx98uau7ae3b2XcTiWVYFcxsqDbDcZT7/ADrmto7Fu2NblqBMZhBWfP8AGtLGYk29jGLZZeKpMEzm4y9mMsfXVuLhtUZNYm4RnuTVrp/tkltlKg/0nbAIkcNCeYn5IrS2FeQXgBi7t9yGAQKwXlz7UDSO+uID6DSOWndpyrc3QLfC1yxmhssiRy1nUdJquE/MuDRn07WFty7eyM/beNzbQxAFtxJGYvGUMiKgAjvg9a5zfS7OFj9NPqk1ubTe4cXiQ4UAXWAImScxzEiT1EVzu+H/AA/7a/Y1OX3gxKtH/BxUUUppK2nIEipEqOacDSY0d16LNp5MQ9knS6pIHTOsRp4ia9Tv3ycPic3IW7gGgGotHkevI14Hu9jzYxFu+Odu4GjvEjMPcTXv+1DOFutIINq4Zg6g2yV1iORquS5sru2zwfZu03wxzWwvagMGEzERr0512W723Dirgsrai4QW1cBSFEmDznwiuBuXCEgMRm0YA6EcxNT7E2icPiLV9f7tw3s5H6ia0LPOCpFfh8c1bR7AuwsSYlba+bsY84Subx21GtYz4G6Ak5Ya2xgZlnUEDSvSzenKFUkNBle4roywNdK8c3yvm3tM3wAWQWzqeZyAGYp49Vkc+XwVz00Nr2o9J3LsB8QVJYDIT2TB0ZfxriruGK7TvxdbKLt2VbU8+8+dbO4G8he49xLShkt9oO7AEMw1XKpLch061efdy4997+ZVLszZQtxoznl6onmKsnnx/V3WVwwZPpONGdRNZ9nHv8MvYRlT4ontqTJiOaHzrSrownGa3IwTg4PaxAaJpYoipERAaWaIoigCxpRFMDUZqoLR2WiKbmq1gsDcumEX9ptFGnzjpQ3XLCr4On3QtngPodbmmh1i2KzN5ME/CxLEQBftuSTHYGHyz766ew4t20TiKMqqNGESBrUFm9bVrrXLiutwp2T2gAqRB0MzXNy+e/k6OBvG012OS/qdgCBnxrE9QrW+fsBNdDuxsEYYOFYcNivDzGWyLMEnxmr527hU5NbXyBH3Cqd/ebCyTxQfKPvNQVXyy7zpNRi+TmMfhiu1ApOj3VOnzXI/3rJ3mwipj8Rln11XXoBYtH761G2iuI2ladFIUXLaAtHaysO0IPLX6qo72n8uxH6wfybQ+6ssvRL8nWwJrNiT/azKDf8Afsrot/cMvEwhjUWGb9o5RNc8BXS+kA/H2B3YdfrY/hUMXokX6znPi/LL2ztrnC7Ka+iIzqxANwnLrciTlE1xz+kjaRMi/hwNOyMOWGvjnk/VW/jf7EafnD+cK8wLL3H3+PlWzH6EcPVfel+WeubU2u+K2TZv3MuZnBOQEAwzLyJMcqhu6bE/z1/miq1r+w8NAjUdZ+Vcq1iR/wCRj9eP5tVv7r/Bqh/1F/6OWFb+4w/LU+i/8NYIrotwh+Wj6Fz7BWXH60drV/Yl+DF2ufym+f8AGvfVdasra2y/hFsWxdW2QwaXB10I0jzrS2gfyi8f8a9/OemZQac3WRshp4b9NGPwebY3A5LjItxXysRI0mPA1SdSOYNW9qr8fd+m/wDEarrcYdT7a2x6HCmmpNEWagmns881HmNKMinqR56imRTaHYYae38K9f3P2neubMuZyrBUuWgJhlVbZPb756eAryGwgHygdfGu33AxzfH4YPAuW2dVyyXuIpAVfEqTRJeUqXqOWVBBkBuw0TzBCyCIrPDcq0smUtIghXBHL5J0ispW1HmKlJDg+Ge6+j7a5vYG2mY5rbCzIMaKsr055SNPCuC9Iqxjbg/Qtz+4Ki9H217WHxJa/cZLZVoILlc2glkXmY5GJFN32xlu/iWuWGDIyIoPaGoER24M+NQUakCfBV3J22MLi0uOSEPYZlJ7KN6xIA15L7q9mvbRVktujyHjLJCs4MaKSwKnzr541DQdCPqM17lu3jDiMFauhmLcMK4tgZhcQwSvZ5nSdeVQmu5Ny8x5nvLtJ8PtC/ctxmLlWzAEEQDB5/bUv9dLg1Nq2RpoCwPv1j3Vn79/8Zf0P5zrz9RedZNmDpPStUMsorhmfJijJ8o9bXUAx0B94mlivM8BvJibWguZ1HybvaHsJ1Feh7IxZvWEusuUsJIE957/AGGt+PMp8GDLp5Y+X0LOWjLT4oq4oJRbpeHVex2iRmZokE+qsroYC6/XXG+kLEtbexw2ZJW4SUZgT2kiYOtcrxq3KNPk6vgntcrR3XDqHFllQ5WImB2SR18K823Z21iTirNs4i4VZ4ZWOYEQdNfKvQ8c/Y9oqeXJuwyYaXFt1ME/cocVvnt7WY/aaZA6ifOiiuFbPaKEV0QQO6nCmzRNA6NTdwfldj9an21d2ps9sRtS/ZQgMXJBblpaSqu6yE4uzAmHzHyXU10ux8PO1cVdMSuqwZHaRFMx5VqxR3Qr5OPrcv086kuqizA2/u6+Etpcdg2Z1SE6EnnrVj0iD8rtjuw9v63u/hW16Q2d7VhFUMWxNsCATprJ07orK37wzNi1IBb4q2AEVydGvTyEdR76sljUISozYtTLLlxub6NkWNB/oQx87/rV5owcHmBB71r1vH4FrmAw+FgibloXAvyMwYnOOY5z4QKybe6GDN1rfAxJgCWdyoEzqQB6sj1h491XR4il8GLO92WT+SW4CNi4WeuXX/mVYxv9hr+u/wCoat7awLXcHh7OGRmCOEjXQW7bqdWiRPXrRtTZxTZtuw2YNxEkSIzsx0nzIqDX/I38GhZEtMo991mlsPdXDvh7VxkOZ0Vm7RiSJOlYu6drLta9bHqobqp4KAmn112wUAhIPQachpyArkt2tmsm0ca9w65wUEx2bgBnUQfVocEqpEI6mUt+5vlHG4389e/W3f5rUwNrT8bcQ4i8q/JuPOpPO445xHyTymohWHL62eh0n2Y/g88xgnEPPI3G9xczS7WsBcrBQoYGQOUqfwIqTEYdmvMFEk3GjzzGu32j6M9oPaXsWhkzMZuHlAOnZ8K6MPSedzush5pQRVjE4R7ZAcRPKoCR3ihgmmRdR511e5hjH4Ztfzi6cuhFcujjMNRz7xXRbqCMZh8uWRcUak8pP40diqXqRR2nchnMal3mfFm5H21lIFOvaEd8EVr7Vw7dqEY9tvVk/K8qojZt48sPePlauH7qLHGI+y/drBq3h+hjr9hp+x93r7sqtYvqpMFvg91gAZ6Ba2dt7q37d24ljD32QMwX4i6I15AkdoD51S3Ir2tnJX2+MP0m+012+4m9lvCW7lu8HIZw6FACVMQw16HSud/q1jjzwN4/StFfrMVNZ3Uxx/8ASXB5hY/iqNxfDJyTXJDvTjFv37t9AQLjyMwAMZQNQDz0rOwgJPLpW++5+OKAfBiDPyrllfteKdhNysaOdpBpH5+wfsejdFdyLtmG9tDb4igr2ogtIPPw8K9H3NE4G0fpD3XGFYNvcPFm1kyKNZ1uKdde412W62wr1nCpZulA4NwwCzaF82kLroavxZIRldlWeLnCvkmyU2K1LGzXdQykMpAIKpeYEHqCEipP6Gudx/5d7/661eJx+5j8PP2OMwu+eBMw5SSZzow1JkmYiuR362lbvXLZtOrKquJQzzcEfZXKqaeG5k9BNcmOFRlutnXlmclVGvumw+G2JIHaPP6DV6bjh2PaK5nGei+9awQxrYlCCiXAio0gMAQM089RWNuc7cZ1LsQEOhYkTmHSatnkX0pRDSw3amD+Tr6Wm1aweAuXZyJIHNiQqr5sdBXLSb6Hq5SjFXJ8FaitM7BuxKG3cjUi1cViPZp9VZgFDi49UQhlhkXldm/uXcIxaqPlhl/9s/dXd7LwbBb11vWu3A8GJVQiqBp17M1wm7OKfiJbtWFNzNAuTkyrGpJCEn/eusUYtlIzopBgy14gcj3iZmt2n9J5/wDU7ebpXBa2xYLW7UEBlvoyZswmCZEjrBapEw03jduBpUAKBJYAGZ075M+yuXe1ibl8ot9WLBPVGI4WUPIMi9EgiY5xVbbd3EWcYrG+rFVVTlF1V7ckZl4pnqF1mauZigraSOr2rfFtiSoljrnUhbjgQonroefhWTbxjhOIiICAWZLlxnhonKlxfWHaI8CQKycQbjNlxBciED2jOQACSOI7MA0HnoTpVrEQEayOKxZLgTjqEWVKsOyw5AyomNZ1OYVF7Xyyai48e/zwamwMEVdLrjtZDcyhmOrgEAhoAiW56862Mfgrd1kLOuQMHiVEsORnu8K4LD3b3BNxmVboCBFy4eCBAaJUgET31t7I2fdfC271y+4doDKnBCgG4BoUTQx1pqViyYnFWzqcRet5vzqAHmc409s1QuJZ+EXbqYhQ9y0uodDGUkAqJ1PnNY74QBWD4nEK+UkjiKVJDlcoYKFLacvGrVjYJOZziMSBChRxddBLSR3Hu00qTKkcZvEtpcQy2nRgAvqOH7UHPJ5ntTJqDZWAa/eW0g1J1PQDqTWRd2WUxL3GvNc+bM6ZgM0nqa9E9GxVUuuY1dEB6yRy7+orDSnlpHovqSwaPd37G3a3MwCsGXC2wZmYkz361uMoIgvpyjs8vdUSYZczAiZOYT40zGixattcuBFRRJZhyFbkedbb6lZt38H1w9kxym3aP+mlXY+DHKzZHklsfYK45fSZguKVOGYJ8lwqkt5oYIrqth7dweKC8FrZYrm4ZChwPEUJpgXFwmGXklsexRUg4PzlH7UVY4SfNHuFOKDuHup0Bn8Kx85f3z+NJlw/ev7xP31digVm8pPkokYf5qn9macrWRyUDyt/7VcoFLy+wclBGtT6skkn82fwqUX16K3stt+FW5pAtHl9gK3wgfNf9w/hTGxXL4t/3Yq7kHhUd9wsT1YKIE6mm4/AWUNp4u4LNwojB8jZSYgNGh514ftjb+JvMpvYps6SFKBVZZ0b1YmRoTXoPpT2sUS0iFllmJMfFuuTqeRI8eVeN3MQM4A6yO/QmRr3aUuH2B8G/a3sv5bVlHNtLGlvK2XTnGUaNEde+vRdjek23ctg3rWR+sOMp1Ilc2vSvD8aCMpWTDgyO4gCfKnYnEAtGjZf0T3VJREV7GyLxE5dCsiTHd3+cVq7E3Se/bNx71qwuY2xxmhiwWTCxy0jWiiqXqJEEz1rF7T41q9s8vbRbaoi3jcBTKtu0JAgTJJ91cPY3dTB3C3w2zeLiItAgLJzesTryooqp5ZPj3NGHK8eRSRdNwA8x7xWzsramHGFKXLgGa4Wgz6otqJ95ooqEJuMuDVq9ZPLHa+hlYW5ZTHNiXxdzJbaLScrZD2WUdNe0frFVlxydmNByIZZJOkR0+2koqU8kpVZkw6rJhvb8GjsDbtu1ikuOJRT63TURIAPTXSumvb7WGdmJlBcUK1tirBRa7TZCZbU5Y86KKnjySiQy55ZXukVMPv5Yt3wqiLRN3OwVtc+qHLMg8wY0g1mXd5LFy6HvF+EFVFticzQIzgyY0APaoop/Xk1yQhklF+Vmfd2zhnugm1dKaiFuSxhtAxbSSOflW3d3utXRDl1BKTGg0npJk5Qo6aiiioPPKN0OWWcnbZSw+1MIhBa1nCowVBKjOSCTM8uf29au4jfsBWtWkZVDJlEiVVWMj2hY89aKKjHUTE8kpdWW8Xv4pVIQg585hVCqA3qQfXkH1u80Pv8gW6iqyLDi0QRLMTpIJ09Y+OlJRT8Tk9yNnJtjFgk3Gdo1Nw8yABoY5acqxLu08TgsQqOXDMeIsMyKTcTLmI0Mj5PQUUVfpnbbNGTUZMkVFvhHpG7npAYWrTYntgoIdAMxIJDZh4QB4zWbv8A76pi8Mti0GXM2ZpjVVGgkdZ1ooo+rLftKUeaYkKSSJ5dlSSTPPu5CB76g/pS6toXLbm26kqTbYgkCI8QPtooq6I2e27I9JeCuWLJcOWyqbuUeo+TtczqJ7q0bPpCwWVmLuIkBYkkawRRRVEsjUnRFSZST0m4YAKbbyDlPLkAIM+OlZeN9KwMi1ZIGVtWIMGdDp0ooqtNvuG5lP8A8VrrerZQAAg8z2oAn361SxXpRxDTHDXlqoYywbs5ddPGiipbOerE5spXvSVjAoAKoQG7KrM5iTJk+NOT0o41gCGSApByqIPZidTqdRRRVih3sW5mY2/GKFw3eKM+UDnoV5QV7+R86dZ31xbWzbfEOVUmchgnTQZjz9lFFEoJRDcxm0NvXcQE4r51UEKricsjtR49nnWFi7tztNpCkQO+JkUUU4rgtXKI8SwFs8wSAdJiYMCnPcUawJPM6ydAdZ86KKs7BR//2Q==" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>Acaponeta, Nayarit</ion-card-title>
+      <ion-card-subtitle>Templo de Nuestra Señora de la Asunción</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      En notable historiador Don Antonio de Ciudad Real en su obra “Tratado curioso y docto de las grandezas de la Nueva España”, 
+      nos dice que en el año de 1587, el Padre Visitador Fray Alonso Ponce, hace una breve descripción del rústico 
+      Templo-Convento de Acaponeta en aquellos años
+    </ion-card-content>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  </ion-card>
+
+  <ion-card>
+    <img src="https://www.mexicoenfotos.com/MX13339236698699.jpg" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>Ahuacatlan, Nayarit</ion-card-title>
+      <ion-card-subtitle>El Templo de San Francisco de Asís</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      En el centro histórico de la cabecera municipal, se encuentra el templo de San Francisco de Asís (originalmente dedicado a 
+      San Juan Evangelista), el cual data del s. XVII. El reloj que remata el templo, 
+      fue donado al pueblo de Ahuacatlán por Alvaro Obregón. 
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Palacio_municipal_de_Amatlan_de_Ca%C3%B1as_Nayarit.jpg" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>Amatlan de Cañas, Nayarit</ion-card-title>
+      <ion-card-subtitle>Palacio MUnicipal de Amatlan de Cañas</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      En el periodo de la cultura Aztatlán (700 d. C. a 1524), los pueblos del territorio debieron ser independientes, 
+      pese a su cercanía con el Señorío de Ahuacatlán y Etzatlán
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="https://labahiamasbella.com/wp-content/uploads/2019/11/San_Juan_de_Abajo.jpg" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>Bahía de Banderas, Nayarit</ion-card-title>
+      <ion-card-subtitle>La Iglesia del Valle de Banderas</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      La evangelización de Valle de Banderas comenzó en el año 1530, con el impulso de Fray Martín de Jesús. Vale la pena mencionar que fue hasta el 
+      año 1974 que este poblado dejó de pertenecer a la diócesis de Guadalajara, cuando Adolfo Suárez Rivera era aún el Obispo de Tepic.
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="https://gtmimg.com/IMG_SERVER/GTM.mx_110106155219.jpg" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>Compostela, Nayarit</ion-card-title>
+      <ion-card-subtitle>Casa el valle de cactlan</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      El Valle de Cactlán, donde se encuentra actualmente la ciudad de Compostela, estaba habitado antes de la llegada de los españoles, 
+      por indios cacnos y tepehuanos. La región fue explorada por el capitán Francisco Cortés de San Buenaventura, sobrino de Hernán Cortés,
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="https://lh3.googleusercontent.com/proxy/x4md3c6Huh--u09wTI9lrP1VhEL_N4RAmbyvizIs0KKgD8i-uP24eQZh_92ATbaRTDLJiITjHXLh9_ZmW_TH02Ud7oDRJ6Mt51JimE9cGBU4m-EAkA8-x-c" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>EL nayar, Nayarit</ion-card-title>
+      <ion-card-subtitle>Ruinas del Templo franciscano de Santa Teresa</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      Se localiza en la zona oriental de Nayarit, en la región ocupada por la Sierra Madre Occidental, El Nayar tiene una extensión territorial 
+      de 5,254.31 kilómetros cuadrados que lo convierten en el municipio más extenso del estado; sus límites territoriales son al 
+      sureste con el municipio de La Yesca, al sur con el municipio de Santa María del Oro
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="https://gentenayarit.com/wp-content/uploads/2020/01/120209-r5.jpg" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>Huajicori, Nayarit</ion-card-title>
+      <ion-card-subtitle>El Templo dedicado a la Virgen de la Candelaria</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      "Lugar donde hay mucho peyote". El Instituto Nacional de Antropología e Historia, tiene registrados cinco sitios con petroglifos 
+      correspondientes al periodo de los Concheros, de ellos, el más estudiado se localiza a 4 km.
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="https://pueblosmexico.com.mx/IMG/arton26232.jpg" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>Ixtlan del Rio, Nayarit</ion-card-title>
+      <ion-card-subtitle>Zona Arqueológica de "Los Toriles"</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      Los Toriles están en el municipio de Ixtlán de Río, Nayarit, es la zona arqueológica que cuenta con los vestigios de un 
+      centro ceremonial de la tradición de Aztatlán, esto es una muestra de nuestras raíces, de nuestro pasado prehispánico.
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="https://gtmimg.com/IMG_SERVER/GTM.mx_171021040449.jpg" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>Jala, Nayarit</ion-card-title>
+      <ion-card-subtitle>La Basílica de Jala</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      Jala, la vieja, fue el primer asentamiento con pobladores de origen náhuatl, que en su tiempo pertenecieron al cacicazgo de Xuchitepec, 
+      localizado a 6 km de la cabecera municipal. 
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRRdleTbo_ejX7OypUYhBcXHmmzxW_VyjLW4A&usqp=CAU" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>La Yesca, Nayarit</ion-card-title>
+      <ion-card-subtitle>El Templo de Santa María de Guadalupe</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      A principio del siglo XVIII los franciscanos instalaron un colegio en Guadalupe Ocotán y en 1716 los jesuitas fundaron la hoy cabecera municipal
+       de "La Yesca". A inicios del siglo XIX, los huicholes y coras vieron amenazadas sus propiedades comunales por la ley de "Manos Muertas", 
+       provocando que muchos de ellos se sumaran a la rebelión encabezada por Manuel Lozada.
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="https://notanayarit.mx/wp-content/uploads/2019/11/FB_IMG_1572980046591-picsay-960x577.jpg" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>Rosamorada, Nayarit</ion-card-title>
+      <ion-card-subtitle>La Parroquia de la Purísima Concepción de María</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      Rosamorada toma su nombre de la existencia de un frondoso árbol de flores moradas llamado "Clavellina" situado en el centro de la población, a 
+      cuya sombra hacían alto, para el descanso de bestias de carga, pasajeros y diligencias que hacían el recorrido de Acaponeta a Tuxpan.
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="https://lh3.googleusercontent.com/proxy/HRgkJpQh5-SKHziFFuO7SQSzoj_iYnnOmGl22zpiKCVwI2jQPmneNw_jucyMNYJ7sBp1-IFo1psTKjzG28_GhwpphRuC1Z-8vsM_M0LbStVeA32tzJEawtGlYIZ7G8MiTAOhAY-LQdCwpLvIP_x3k1ZUFQm0NmGYgyBDRZPFckY3xIIGxuLBwnNIAMHz95QTS4620P3gKn1k_nxrYU4-zLs6fef_J3Y4Pg" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>Ruíz, Nayarit</ion-card-title>
+      <ion-card-subtitle>Municipio</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      El municipio recibe el nombre en honor al general Mariano Ruiz Montañés (1846-1932), soldado de la revolución y último jefe político del 
+      porfiriato y de armas del territorio de Tepic, que vivió y guarneció la población hasta 1910. 
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="https://i.ytimg.com/vi/7tfRMzvaknI/maxresdefault.jpg" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>Santa Maria del Oro, Nayarit</ion-card-title>
+      <ion-card-subtitle>Ex-Hacienda San Jose de Mojarras</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      Originalmente, en el año de 1530, el nombre del lugar era "Santa María de Acuitapílco", en honor de la Patrona del lugar y de 
+      la mina de Acuitapílco ubicada en la cola de la laguna. En 1594, cambió el lugar y nombre a "Santa María del Oro", en 
+      consideración a que se encontraban tres minas de oro fino cerca del poblado. 
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/03/01/f9/f9/nuestra-senora-del-rosario.jpg" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>San BLas, Nayarit</ion-card-title>
+      <ion-card-subtitle>Templo de la Marinera</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      Desde su construcción en el año 1769, el Templo de la Marinera se vio afectado por diversos acontecimientos como desastres 
+      naturales y conflictos bélicos que lo llevaron a su decadencia, no obstante, también ha tenido momentos de gran gloria.
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="https://gtmimg.com/IMG_SERVER/GTM.mx_160210183615.jpg" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>Tepic, Nayarit</ion-card-title>
+      <ion-card-subtitle>La Catedral</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      A comienzos del siglo XIX, se decide levantar otro más grande y de mayores dimensiones. Las obras concluyeron en el año 
+      de 1885. El templo fue designado como catedral por el Papa León XIII, el 23 de junio de 1891, siendo su primer obispo Ignacio Díaz y Macedo. 
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="https://mapio.net/images-p/68225616.jpg" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>Tuxpan, Nayarit</ion-card-title>
+      <ion-card-subtitle>La Parroquia de San Miguel Arcángel</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      En la localidad de Coamiles establecieron su más importante centro ceremonial; según el historiador Cristian Duverger,
+       el centro ceremonial está compuesto de varios tipos de estructuras, a la fecha se conocen 40, que contienen más de 
+       150 grabados y su arquitectura es de piedras estucadas con relleno de adobe.  
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <img src="https://www.ontheroadin.com/miscellasneouspictures/xalisco%20church.jpg" weight=200px hight=200px>
+    <ion-card-header>
+      <ion-card-title>Xalisco, Nayarit</ion-card-title>
+      <ion-card-subtitle>El Templo dedicado a San Cayetano</ion-card-subtitle>
+    </ion-card-header>
+    
+    <ion-card-content>
+      Xalisco significa "Lugar sobre el arenal". Se deriva del náhuatl, de los vocablos "Xalli" que significa 
+      "Arena"; e "Ixco" que significa "En la cara", "En la superficie", "Delante", "Enfrente".  
+    </ion-card-content>
+
+  </ion-card>
+
+  
 </ion-content>
